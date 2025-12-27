@@ -8,15 +8,26 @@
         body { font-family: Arial, sans-serif; text-align: center; margin-top: 100px; background: #f0f0f0; }
         h1 { color: #333; }
         p { font-size: 1.2em; color: #666; }
+        .app-announcement img {
+            width: 64px;
+            height: 64px;
+            border-radius: 12px; /* Typical iOS-style rounded corners for app icons */
+            vertical-align: middle;
+            margin-right: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Optional subtle shadow */
+        }
     </style>
 </head>
 <body>
-  <div style="text-align: center; margin-top: 50px;">
-        <img src="images/zagmob.png" alt="Zagmob Logo" style="max-width: 300px; height: auto;">
-    </div>
-    <h1>Welcome to Zagmob</h1>
-    <p>Daily historical lifespan matches app (Outived) coming soon to iOS & Android!</p>
-    <p>Built by Zak & Greg – turning great ideas into retirement-friendly ventures.</p>
-    <p>Contact: support@zagmob.com | Stay tuned!</p>
+<div style="text-align: center; margin-top: 50px;">
+    <img src="images/zagmob.png" alt="Zagmob Logo" style="max-width: 300px; height: auto;">
+</div>
+<h1>Welcome to Zagmob</h1>
+<p class="app-announcement">
+    <img src="images/app_icon.png" alt="Outlived App Icon">
+    Daily historical lifespan matches app (Outlived) coming soon to iOS & Android!
+</p>
+<p>Built by Zak & Greg – turning great ideas into retirement-friendly ventures.</p>
+<p>Contact: support@zagmob.com | Stay tuned!</p>
 </body>
 </html>
