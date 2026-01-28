@@ -122,6 +122,11 @@
             .signup input, .signup button { display: block; width: 100%; border-radius: 8px; margin-bottom: 1rem; }
             .signup button { margin: 0; }
         }
+
+        iframe:hover {
+            box-shadow: 0 12px 32px rgba(0,0,0,0.2);
+            transition: box-shadow 0.3s ease;
+        }
     </style>
 </head>
 <body>
@@ -149,6 +154,24 @@
             Every day you open <strong>Out Lived!</strong>, it shows you up to 5 real people who lived rich lives… and passed away exactly one day younger than you are right now.<br><br>
             A gentle, daily reminder — powered by the Pantheon dataset, stored offline in SQLite, built with Flutter.<br>
             Clean, private, ad-supported (tastefully).
+        </div>
+
+        <!-- Video embed goes here -->
+        <div style="margin-top: 2.5rem; text-align: center;">
+            <h3 style="font-size: 1.4rem; margin-bottom: 1rem; color: var(--light-gray);">
+                Watch a quick demo of Out Lived!
+            </h3>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <iframe
+                        style="aspect-ratio: 16 / 9; width: 100%; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.15);"
+                        src="https://www.youtube.com/embed/gOUi4J54H1o"
+                        title="Out Lived! app demo video"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                </iframe>
+            </div>
         </div>
     </section>
 
