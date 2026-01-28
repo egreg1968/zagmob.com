@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Zagmob – Thoughtful Daily Apps</title>
-    <meta name="description" content="Simple, meaningful mobile apps built by two longtime friends — coming soon."/>
+    <meta name="description" content="Simple, meaningful mobile apps built by two longtime friends — Out Lived! coming soon."/>
 
     <style>
         :root {
@@ -59,8 +59,19 @@
         }
         h2 {
             font-size: 1.8rem;
-            margin-bottom: 1.2rem;
+            margin-bottom: 1rem;
             color: var(--accent);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            border-radius: 18px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+            background: white; /* fallback if transparent */
         }
         .about p {
             font-size: 1.15rem;
@@ -106,6 +117,8 @@
         a:hover { text-decoration: underline; }
         @media (max-width: 600px) {
             h1 { font-size: 2.8rem; }
+            h2 { flex-direction: column; align-items: flex-start; gap: 0.8rem; }
+            .app-icon { width: 64px; height: 64px; }
             .signup input, .signup button { display: block; width: 100%; border-radius: 8px; margin-bottom: 1rem; }
             .signup button { margin: 0; }
         }
@@ -127,11 +140,13 @@
     </section>
 
     <section>
-        <h2>First app — coming soon</h2>
+        <h2>
+            <img src="images/app_icon.png" alt="Out Lived! app icon" class="app-icon">
+            First app — Out Lived! — coming soon
+        </h2>
         <div class="teaser">
-            <strong>Outlived</strong><br><br>
-            Enter your birth date once.<br>
-            Every day you open the app, it shows you up to 5 real people who lived rich lives… and passed away exactly one day younger than you are right now.<br><br>
+            Enter your birth date once.<br><br>
+            Every day you open <strong>Out Lived!</strong>, it shows you up to 5 real people who lived rich lives… and passed away exactly one day younger than you are right now.<br><br>
             A gentle, daily reminder — powered by the Pantheon dataset, stored offline in SQLite, built with Flutter.<br>
             Clean, private, ad-supported (tastefully).
         </div>
@@ -139,7 +154,7 @@
 
     <section class="signup">
         <h2>Want to know when we launch?</h2>
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">  <!-- ← swap with real service later -->
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">  <!-- ← swap with real service later, e.g. Formspree, Buttondown -->
             <input type="email" name="email" placeholder="your.email@example.com" required>
             <button type="submit">Notify me</button>
         </form>
