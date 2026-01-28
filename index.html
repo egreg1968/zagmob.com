@@ -1,33 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zagmob</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Zagmob – Thoughtful Daily Apps</title>
+    <meta name="description" content="Simple, meaningful mobile apps built by two longtime friends — coming soon."/>
+
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin-top: 100px; background: #f0f0f0; }
-        h1 { color: #333; }
-        p { font-size: 1.2em; color: #666; }
-        .app-announcement img {
-            width: 64px;
-            height: 64px;
-            border-radius: 12px; /* Typical iOS-style rounded corners for app icons */
-            vertical-align: middle;
-            margin-right: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Optional subtle shadow */
+        :root {
+            --bg: #f9f9fb;
+            --text: #1a1a2e;
+            --accent: #4a6fa5;      /* calm blue-ish */
+            --light-gray: #6b7280;
+            --border: #e5e7eb;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0f172a;
+                --text: #e2e8f0;
+                --accent: #60a5fa;
+                --light-gray: #94a3b8;
+                --border: #334155;
+            }
+        }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+            flex: 1;
+        }
+        header {
+            text-align: center;
+            padding: 4rem 0 2rem;
+        }
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--accent);
+        }
+        .tagline {
+            font-size: 1.4rem;
+            color: var(--light-gray);
+            margin-bottom: 3rem;
+        }
+        section {
+            margin-bottom: 3.5rem;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.2rem;
+            color: var(--accent);
+        }
+        .about p {
+            font-size: 1.15rem;
+            margin-bottom: 1.2rem;
+        }
+        .teaser {
+            background: rgba(74, 111, 165, 0.06);
+            padding: 1.8rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+        .signup {
+            text-align: center;
+            margin: 3rem 0;
+        }
+        .signup input {
+            padding: 0.9rem 1.2rem;
+            font-size: 1.1rem;
+            border: 1px solid var(--border);
+            border-radius: 8px 0 0 8px;
+            width: 260px;
+            max-width: 100%;
+        }
+        .signup button {
+            padding: 0.9rem 1.6rem;
+            font-size: 1.1rem;
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 0 8px 8px 0;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .signup button:hover { background: #3b5c8c; }
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: var(--light-gray);
+            font-size: 0.95rem;
+            border-top: 1px solid var(--border);
+        }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        @media (max-width: 600px) {
+            h1 { font-size: 2.8rem; }
+            .signup input, .signup button { display: block; width: 100%; border-radius: 8px; margin-bottom: 1rem; }
+            .signup button { margin: 0; }
         }
     </style>
 </head>
 <body>
-<div style="text-align: center; margin-top: 50px;">
-    <img src="images/zagmob.png" alt="Zagmob Logo" style="max-width: 300px; height: auto;">
+
+<div class="container">
+
+    <header>
+        <h1>Zagmob</h1>
+        <div class="tagline">Thoughtful daily apps built by friends — for the second half of life</div>
+    </header>
+
+    <section class="about">
+        <h2>Who we are</h2>
+        <p>Hey — we're Zak and Greg. Childhood friends since 5th grade (yes, that's a very long time). Zak brings the electrical engineering brain; Greg handles the 30+ years of IT (Java backends, databases, front-ends, you name it).</p>
+        <p>Now that retirement is getting closer, we're finally building the kind of simple, meaningful mobile apps we've always talked about. No bloat. No dark patterns. Just useful things worth opening every day.</p>
+    </section>
+
+    <section>
+        <h2>First app — coming soon</h2>
+        <div class="teaser">
+            <strong>Outlived</strong><br><br>
+            Enter your birth date once.<br>
+            Every day you open the app, it shows you up to 5 real people who lived rich lives… and passed away exactly one day younger than you are right now.<br><br>
+            A gentle, daily reminder — powered by the Pantheon dataset, stored offline in SQLite, built with Flutter.<br>
+            Clean, private, ad-supported (tastefully).
+        </div>
+    </section>
+
+    <section class="signup">
+        <h2>Want to know when we launch?</h2>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">  <!-- ← swap with real service later -->
+            <input type="email" name="email" placeholder="your.email@example.com" required>
+            <button type="submit">Notify me</button>
+        </form>
+        <p style="margin-top:1.5rem; font-size:0.95rem;">
+            Or just say hi → <a href="mailto:hello@zagmob.com">hello@zagmob.com</a>
+        </p>
+    </section>
+
 </div>
-<h1>Welcome to Zagmob</h1>
-<p class="app-announcement">
-    <img src="images/app_icon.png" alt="Outlived App Icon">
-    Daily historical lifespan matches app (Outlived) coming soon to iOS & Android!
-</p>
-<p>Built by Zak & Greg – turning great ideas into retirement-friendly ventures.</p>
-<p>Contact: support@zagmob.com | Stay tuned!</p>
+
+<footer>
+    © 2026 Zagmob – Built with curiosity
+</footer>
+
 </body>
 </html>
