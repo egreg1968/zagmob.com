@@ -128,6 +128,14 @@
             transition: box-shadow 0.3s ease;
         }
     </style>
+<script>
+function showPopup(src) {
+  const popup = document.getElementById('imagePopup');
+  const img = document.getElementById('popupImage');
+  img.src = src;
+  popup.style.display = 'block';
+}
+</script>
 </head>
 <body>
 
@@ -140,6 +148,24 @@
 
     <section class="about">
         <h2>Who we are</h2>
+            <div style="display: inline-block; cursor: pointer;">
+  <img 
+    src="images/founders.jpeg" 
+    alt="Founders" 
+    style="width: 80px; height: auto; display: block;"
+    onclick="showPopup(this.src)"
+  >
+</div>
+
+<!-- Simple modal/popup (hidden by default) -->
+<div id="imagePopup" 
+     onclick="this.style.display='none'" 
+     style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.9); z-index:9999; cursor:pointer;">
+
+  <img src="" 
+       id="popupImage" 
+       style="max-width:94vw; max-height:94vh; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); box-shadow:0 0 40px rgba(0,0,0,0.6);">
+</div>
         <p>Hey — we're Zak and Greg. Childhood friends since 5th grade (yes, that's a very long time). Zak brings the electrical engineering brain; Greg handles the 30+ years of IT (Java backends, databases, front-ends, you name it).</p>
         <p>Now that retirement is getting closer, we're finally building the kind of simple, meaningful mobile apps we've always talked about. No bloat. No dark patterns. Just useful things worth opening every day.</p>
     </section>
