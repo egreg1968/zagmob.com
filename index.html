@@ -196,6 +196,47 @@
         .modal-close:hover {
             background: #555;
         }
+        .logo-container {
+            position: relative;
+            display: inline-block;   /* Keeps it from taking full width unless you want */
+            /* If your current logo area is centered, add: margin: 0 auto; */
+        }
+
+        .static-logo,
+        .logo-video {
+            width: 100%;             /* Fills the container */
+            height: auto;
+            display: block;
+        }
+
+        .logo-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: contain;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.6s ease;
+        }
+
+        .logo-video.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        /* For 50% scaling – pick ONE approach below and add it */
+
+        /* Approach A: Scale via container width (responsive-friendly) */
+        .logo-container {
+            width: 50%;              /* Or max-width: 250px; if you prefer fixed */
+            /* If it needs centering: margin: 0 auto; */
+        }
+
+        /* OR Approach B: Pure scale transform (doesn't change layout box) */
+        .logo-container {
+            transform: scale(0.5);
+            transform-origin: center center;  /* Or top left, depending on alignment */
+        }
     </style>
 </head>
 <body>
@@ -203,8 +244,15 @@
 <div class="container">
 
     <header>
-        <div class="logo">
-            <img src="images/logo.jpg" width="200" alt="ZaGMob Logo" />
+        <div class="logo-container">
+            <!-- Your current logo image (keep it exactly as-is) -->
+            <img src="images/logo.jpg" alt="Zagmob Logo" class="static-logo">
+
+            <!-- The animated overlay video – hidden by default until we trigger -->
+            <video class="logo-video" muted playsinline>
+                <source src="animated_logo.mp4" type="video/mp4">
+                Your browser doesn't support video.
+            </video>
         </div>
         <h1>ZaGMob</h1>
         <div class="tagline">Thoughtful daily apps built by friends — for the second half of life</div>
@@ -335,6 +383,38 @@
             if (e.key === 'Escape' && modal.style.display === 'block') {
                 modal.style.display = 'none';
             }
+        });
+    });
+    document.addEventListener('DOMContentLoaded', () => {
+        const container = document.querySelector('.logo-container');
+        const video = document.querySelector('.logo-video');
+        const staticLogo = document.querySelector('.static-logo');
+
+        if (!video || !container) return;
+
+        function playIntro() {
+            video.currentTime = 0;              // Reset to start
+            video.classList.add('active');      // Show video
+            staticLogo.style.opacity = '0';     // Optional: hide static during play
+            video.play().catch(err => {
+                console.log("Autoplay prevented:", err);
+                // Fallback: maybe show a play button if needed
+            });
+        }
+
+        // Play automatically on first load
+        playIntro();
+
+        // Replay on click anywhere in the container
+        container.addEventListener('click', () => {
+            playIntro();
+        });
+
+        // When video finishes → hide video, show static logo
+        video.addEventListener('ended', () => {
+            video.classList.remove('active');
+            staticLogo.style.opacity = '1';
+            // Optional: add a very subtle glow/pulse to static logo for fun
         });
     });
 </script>
