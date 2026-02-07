@@ -198,12 +198,26 @@
         .logo-container {
             position: relative;
             display: inline-block;   /* Keeps it from taking full width unless you want */
-            margin-top:-70px;
-            margin-bottom:-100px;
-            padding: 0;
             /* If your current logo area is centered, add: margin: 0 auto; */
         }
 
+        @media (min-width: 768px) {   /* or 992px if you want it only on bigger desktops */
+            .logo-container {
+                margin-top: -70px;
+                margin-bottom: -100px;
+                padding: 0;
+            }
+        }
+
+        /* Optional: Explicit reset or gentler values on mobile/small screens */
+        @media (max-width: 767px) {
+            .logo-container {
+                margin-top: 0 !important;     /* Or a small positive like 10px/20px if needed */
+                margin-bottom: 20px !important;  /* Gives some breathing room below */
+                padding: 0;
+            }
+        }
+        
         .static-logo,
         .logo-video {
             width: 100%;             /* Fills the container */
