@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Out Lived! — See Who You've Outlived Today</title>
+    <title>Out Lived! — See Who You've Outlived Today | Private Historical Figures App</title>
     <meta name="description" content="Every day discover real historical figures who lived and died exactly one day younger than you are right now. A thoughtful daily app powered by the Pantheon dataset.">
     <meta property="og:title" content="Out Lived! — See Who You've Outlived Today" />
     <meta property="og:description" content="Every day the app shows you up to 5 real historical figures who lived rich lives — and stopped exactly one day short of where you are right now." />
@@ -13,6 +12,24 @@
     <meta property="og:image:alt" content="Out Lived! App Icon" />
     <meta property="og:url" content="https://zagmob.com/outlived.html" />
     <meta property="og:type" content="website" />   <!-- or "article" if it fits better -->
+    <link rel="canonical" href="https://zagmob.com/outlived.html">
+
+    <!-- Basic Software App Schema (helps Google understand it's an app) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Out Lived!",
+            "operatingSystem": "Android",
+            "applicationCategory": "LifestyleApplication",
+            "offers": {
+                "@type": "Offer",
+                "price": "2.99",
+                "priceCurrency": "USD"
+            },
+            "description": "A gentle daily reminder showing historical figures who died one day short of your current age. Private, no tracking, one-time purchase."
+        }
+    </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
@@ -146,7 +163,7 @@
         <div class="cta-buttons">
             <!-- Android Button (always live) -->
             <a href="https://play.google.com/store/apps/details?id=com.zagmob.outlived"
-               class="btn btn-primary">
+               class="btn btn-primary" target="_blank" rel="noopener">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/512px-Google_Play_Store_badge_EN.svg.png"
                      alt="Get it on Google Play" class="store-badge" style="height:48px;">
             </a>
@@ -196,6 +213,25 @@
             <img src="images/leader_board.png"
                  alt="Leader Board" class="screenshot">
         </div>
+    </div>
+
+    <div class="section">
+        <h2>Frequently Asked Questions</h2>
+
+        <h3>What is Out Lived!?</h3>
+        <p>Out Lived! is a mindful daily app that shows you up to 5 real historical figures from the Pantheon dataset who lived rich lives but died exactly one day short of your current age. It's a quiet reminder that time is precious.</p>
+
+        <h3>Is my data private?</h3>
+        <p>Yes — completely. Enter your birthdate once. Everything stays on your device in local SQLite. No accounts, no tracking, no cloud. Built with Flutter for a clean, private experience.</p>
+
+        <h3>How accurate is the age matching?</h3>
+        <p>Very accurate. We use verified historical data and calculate your exact age in days right now. The app quietly compares it to thousands of notable figures.</p>
+
+        <h3>Why a one-time payment instead of subscription?</h3>
+        <p>We hate subscription fatigue too. Premium is a simple $2.99 one-time upgrade that unlocks all features and removes ads for life.</p>
+
+        <h3>When will the iOS version be available?</h3>
+        <p>The iOS version is currently under review and expected very soon (possibly this week). We'll update this page as soon as it's live on the App Store.</p>
     </div>
 
     <div class="section">
@@ -273,9 +309,9 @@
     </div>
 
     <div style="text-align:center; margin:60px 0;">
-        <p style="font-size:1.1rem; margin-bottom:20px;">Ready to see who you've outlived today?</p>
+        <h2>Ready to See Who You've Outlived Today?</h2>
         <div class="cta-buttons">
-            <a href="https://play.google.com/store/apps/details?id=com.zagmob.outlived" class="btn btn-primary">Get on Android</a>
+            <a href="https://play.google.com/store/apps/details?id=com.zagmob.outlived" class="btn btn-primary" target="_blank" rel="noopener">Get on Android</a>
             <button onclick="showComingSoon()" class="btn btn-primary">
                 Get on iPhone <span class="coming-soon-badge">COMING SOON</span>
             </button>
