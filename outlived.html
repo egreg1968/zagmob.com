@@ -4,17 +4,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Out Lived! — See Who You've Outlived Today | Private Historical Figures App</title>
     <meta name="description" content="Every day discover real historical figures who lived and died exactly one day younger than you are right now. A thoughtful daily app powered by the Pantheon dataset.">
+
+    <!-- Open Graph -->
     <meta property="og:title" content="Out Lived! — See Who You've Outlived Today" />
     <meta property="og:description" content="Every day the app shows you up to 5 real historical figures who lived rich lives — and stopped exactly one day short of where you are right now." />
     <meta property="og:image" content="https://zagmob.com/images/og_image.png" />
-    <meta property="og:image:width" content="1200" />   <!-- Recommended: at least 1200px wide -->
-    <meta property="og:image:height" content="630" />   <!-- Recommended ratio ~1.91:1 -->
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Out Lived! App Icon" />
     <meta property="og:url" content="https://zagmob.com/outlived.html" />
-    <meta property="og:type" content="website" />   <!-- or "article" if it fits better -->
+    <meta property="og:type" content="website" />
     <link rel="canonical" href="https://zagmob.com/outlived.html">
 
-    <!-- Twitter / X Card Tags -->
+    <!-- Twitter / X Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Out Lived! — See Who You've Outlived Today">
     <meta name="twitter:description" content="A gentle daily reminder showing real historical figures who died one day short of your current age. Private, no tracking, one-time purchase.">
@@ -29,16 +31,17 @@
             "@context": "https://schema.org",
             "@type": "SoftwareApplication",
             "name": "Out Lived!",
-            "operatingSystem": "Android",
+            "operatingSystem": "iOS, Android",
             "applicationCategory": "LifestyleApplication",
             "offers": {
                 "@type": "Offer",
-                "price": "2.99",
+                "price": "0",
                 "priceCurrency": "USD"
             },
-            "description": "A gentle daily reminder showing historical figures who died one day short of your current age. Private, no tracking, one-time purchase."
+            "description": "Every day discover real historical figures who lived and died exactly one day younger than you are right now. Private, offline, built with Flutter."
         }
     </script>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
@@ -88,15 +91,6 @@
         .btn-secondary:hover { border-color: var(--primary); }
 
         .store-badge { height: 60px; }
-        .coming-soon-badge {
-            background: #eab308;
-            color: #1f2937;
-            font-size: 0.85rem;
-            padding: 4px 12px;
-            border-radius: 9999px;
-            font-weight: 700;
-            margin-left: 8px;
-        }
 
         .section {
             padding: 60px 20px;
@@ -119,38 +113,6 @@
             border: 1px solid #e2e8f0;
         }
 
-        /* Modal */
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(0,0,0,0.7);
-            align-items: center;
-            justify-content: center;
-            z-index: 1000;
-        }
-        .modal-content {
-            background: white;
-            max-width: 420px;
-            width: 90%;
-            border-radius: 20px;
-            padding: 32px;
-            text-align: center;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
-        }
-        .modal-content h3 { margin: 0 0 16px; color: #0f172a; }
-        .modal-content p { color: #475569; }
-        .close-btn {
-            margin-top: 24px;
-            padding: 12px 28px;
-            background: var(--primary);
-            color: white;
-            border: none;
-            border-radius: 9999px;
-            font-weight: 600;
-            cursor: pointer;
-        }
-
         footer {
             text-align: center;
             padding: 40px 20px;
@@ -170,19 +132,19 @@
         </p>
 
         <div class="cta-buttons">
-            <!-- Android Button (always live) -->
+            <!-- Android -->
             <a href="https://play.google.com/store/apps/details?id=com.zagmob.outlived"
                class="btn btn-primary" target="_blank" rel="noopener">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/512px-Google_Play_Store_badge_EN.svg.png"
                      alt="Get it on Google Play" class="store-badge" style="height:48px;">
             </a>
 
-            <!-- iOS Button (Coming Soon) -->
-            <button onclick="showComingSoon()" class="btn btn-primary">
+            <!-- iOS - now live -->
+            <a href="https://apps.apple.com/app/out-lived/id6760954055"
+               class="btn btn-primary" target="_blank" rel="noopener">
                 <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
                      alt="Download on the App Store" class="store-badge" style="height:48px;">
-                <span class="coming-soon-badge">COMING SOON</span>
-            </button>
+            </a>
         </div>
         <div>
             <a href="https://zagmob.com/" style="text-decoration: none; color: inherit;">
@@ -245,9 +207,6 @@
 
         <h3>Why a one-time payment instead of subscription?</h3>
         <p>We hate subscription fatigue too. Premium is a simple $2.99 one-time upgrade that unlocks all features and removes ads for life.</p>
-
-        <h3>When will the iOS version be available?</h3>
-        <p>The iOS version is currently under review and expected very soon (possibly this week). We'll update this page as soon as it's live on the App Store.</p>
     </div>
 
     <div class="section">
@@ -314,7 +273,7 @@
 
         <hr style="margin: 3rem 0; border: none; border-top: 1px solid #ddd;">
     </div>
-    
+
     <div class="section">
         <h2 style="text-align:center;">Why we built Out Lived!</h2>
         <p style="max-width:720px; margin:0 auto; font-size:1.1rem; text-align:center;">
@@ -324,69 +283,47 @@
         </p>
     </div>
 
-    <div style="text-align:center; margin:60px 0;">
-        <h2>Ready to See Who You've Outlived Today?</h2>
+    <div class="section">
+        <h2 style="text-align:center;">Ready to See Who You've Outlived Today?</h2>
         <div class="cta-buttons">
-            <a href="https://play.google.com/store/apps/details?id=com.zagmob.outlived" class="btn btn-primary" target="_blank" rel="noopener">Get on Android</a>
-            <button onclick="showComingSoon()" class="btn btn-primary">
-                Get on iPhone <span class="coming-soon-badge">COMING SOON</span>
-            </button>
+            <a href="https://play.google.com/store/apps/details?id=com.zagmob.outlived"
+               class="btn btn-primary" target="_blank" rel="noopener">Get on Android</a>
+            <a href="https://apps.apple.com/app/out-lived/id6760954055"
+               class="btn btn-primary" target="_blank" rel="noopener">Get on iPhone</a>
         </div>
-    </div>
-</div>
-
-<!-- Coming Soon Modal -->
-<div id="comingSoonModal" class="modal">
-    <div class="modal-content">
-        <h3>Out Lived! for iPhone</h3>
-        <p>We're putting the final touches on the iOS version and submitting it to Apple for review very soon.</p>
-        <p>Want to be notified the moment it's live? Drop your email below or just keep an eye on this page.</p>
-
-        <!-- Optional: Add a simple email signup form here later -->
-        <button onclick="closeModal()" class="close-btn">Got it — thanks!</button>
     </div>
 </div>
 
 <footer>
     © 2026 ZaGMob LLC • Nixa, Missouri<br>
     <a href="https://zagmob.com/privacy_policy.html" style="color:#64748b;">Privacy Policy</a> •
-    <a href="mailto:support@zagmob.com" style="color:#64748b;">support@zagmob.com</a>
+    <a href="mailto:support@zagmob.com" style="color:#64748b;">support@zagmob.com</a><br>
+    Built with curiosity (and a little coffee and spite) by Zak and Greg
 </footer>
 
 <script>
-    // Mobile auto-redirect (only Android for now — iOS shows modal)
+    // Smart mobile redirect to the correct store
     function redirectToStore() {
         const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
         if (/android/i.test(userAgent)) {
             setTimeout(() => {
                 window.location.href = "https://play.google.com/store/apps/details?id=com.zagmob.outlived";
-            }, 1200);
+            }, 800);
             return;
         }
 
-        // iOS users see the full page + "Coming Soon" buttons
-        console.log('%cOut Lived! landing page — iOS coming soon', 'color:#2563eb; font-weight:600');
-    }
+        if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            setTimeout(() => {
+                window.location.href = "https://apps.apple.com/app/out-lived/id6760954055";
+            }, 800);
+            return;
+        }
 
-    function showComingSoon() {
-        document.getElementById('comingSoonModal').style.display = 'flex';
+        console.log('%cOut Lived! landing page — both stores now live', 'color:#2563eb; font-weight:600');
     }
-
-    function closeModal() {
-        document.getElementById('comingSoonModal').style.display = 'none';
-    }
-
-    // Close modal if user clicks outside the content
-    document.getElementById('comingSoonModal').addEventListener('click', function(e) {
-        if (e.target === this) closeModal();
-    });
 
     window.addEventListener('load', redirectToStore);
 </script>
 </body>
-<footer style="text-align: center; margin-top: 40px; padding: 20px; font-size: 0.9em; color: #666;">
-    <a href="https://zagmob.com/">Zagmob – Thoughtful Daily Apps</a>
-    • Built with curiosity ( also coffee and spite ) by Zak and Greg
-</footer>
 </html>
