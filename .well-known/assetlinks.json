@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.zagmob.outlived",
+      "sha256_cert_fingerprints": [
+        "23:38:C8:0A:79:45:E2:8D:5E:F8:94:64:12:44:18:E8:C6:91:A4:65:96:CC:A4:E0:36:00:E7:54:AB:4A:8D:A8",
+        "67:D2:81:24:F1:D6:87:C9:23:ED:FD:EF:5C:F7:21:E6:C8:56:F9:07:62:3D:BA:C8:32:3A:C0:24:88:50:C8:B6"
+      ]
+    }
+  }
+]
