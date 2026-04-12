@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "2WP9VDM8J4.com.zagmob.outlived"
+        ],
+        "components": [
+          {
+            "/": "/p/*",
+            "comment": "Out Lived! obfuscated person deep links"
+          }
+        ]
+      }
+    ]
+  }
+}
