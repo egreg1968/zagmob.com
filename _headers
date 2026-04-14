@@ -1,6 +1,9 @@
-# Force correct Content-Type for iOS Universal Links
 /.well-known/apple-app-site-association
   Content-Type: application/json
+  Cache-Control: public, max-age=0, must-revalidate
+  X-Content-Type-Options: nosniff
 
 /apple-app-site-association
   Content-Type: application/json
+  Cache-Control: public, max-age=0, must-revalidate
+  X-Content-Type-Options: nosniff
