@@ -1,5 +1,43 @@
 <html>
+<head><style>
+    :root {
+        --bg: #f9f9fb;
+        --text: #1a1a2e;
+        --accent: #1a1a2e;      /* calm blue-ish */
+        --light-gray: #6b7280;
+        --border: #e5e7eb;
+    }
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --bg: #0f172a;
+            --text: #e2e8f0;
+            --accent: #60a5fa;
+            --light-gray: #94a3b8;
+            --border: #334155;
+        }
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        flex: 1;
+        padding: 3rem 1.5rem;
+    }
+    body {
+        font-family: system-ui, -apple-system, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+</style></head>
 <body>
-<a href="https://zagmob.com/p/UHJpbmNlc3NfSWRhX29mX1NheGUtTWVpbmluZ2Vu">test</a>
+<div class="container">
+<a href="https://zagmob.com/p/UHJpbmNlc3NfSWRhX29mX1NheGUtTWVpbmluZ2Vu">https://zagmob.com/p/UHJpbmNlc3NfSWRhX29mX1NheGUtTWVpbmluZ2Vu</a>
+</div>
 </body>
 </html>
+
+
