@@ -119,22 +119,23 @@
             color: #64748b;
             font-size: 0.95rem;
         }
+
         .cta-buttons {
             display: flex;
             gap: 16px;
             justify-content: center;
             flex-wrap: wrap;
             margin: 40px 0;
-            align-items: center;           /* helps vertical alignment when wrapping */
+            align-items: center;
         }
 
         .cta-buttons a {
-            flex: 1 1 auto;                /* allows buttons to grow/shrink but prefer natural width */
-            min-width: 220px;              /* prevents buttons from becoming too narrow */
-            max-width: 280px;              /* caps max width so they don't stretch too much on wide screens */
+            flex: 0 1 auto;           /* don't grow too much */
+            min-width: 220px;         /* important for forcing wrap */
+            max-width: 280px;
+            padding: 10px 20px;       /* reduce padding slightly if needed */
         }
 
-        /* Force earlier stacking on very narrow viewports like iPhone */
         @media (max-width: 480px) {
             .cta-buttons {
                 flex-direction: column;
@@ -142,9 +143,13 @@
             }
 
             .cta-buttons a {
-                min-width: 240px;          /* or remove min-width if you want full width */
-                width: 100%;
+                min-width: 240px;
                 max-width: 300px;
+                width: 100%;          /* makes them full-width on very small screens */
+            }
+
+            .cta-buttons img {
+                height: 46px;         /* slightly smaller on mobile to help fit */
             }
         }
     </style>
@@ -162,18 +167,18 @@
         <div class="cta-buttons">
             <!-- Android -->
             <a href="https://play.google.com/store/apps/details?id=com.zagmob.outlived"
-               class="btn btn-primary" target="_blank" rel="noopener">
+               class="btn btn-primary" target="_blank" rel="noopener" style="min-width: 220px;">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/512px-Google_Play_Store_badge_EN.svg.png"
                      alt="Get it on Google Play"
-                     style="height: 52px; width: auto; max-width: 100%; object-fit: contain;">
+                     style="height: 48px; width: auto; max-width: 100%; display: block; margin: 0 auto;">
             </a>
 
             <!-- iOS -->
             <a href="https://apps.apple.com/app/out-lived/id6760954055"
-               class="btn btn-primary" target="_blank" rel="noopener">
+               class="btn btn-primary" target="_blank" rel="noopener" style="min-width: 220px;">
                 <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
                      alt="Download on the App Store"
-                     style="height: 52px; width: auto; max-width: 100%; object-fit: contain;">
+                     style="height: 48px; width: auto; max-width: 100%; display: block; margin: 0 auto;">
             </a>
         </div>
         <div>
