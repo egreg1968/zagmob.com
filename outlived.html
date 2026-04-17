@@ -119,6 +119,39 @@
             color: #64748b;
             font-size: 0.95rem;
         }
+        .cta-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 40px 0;
+            align-items: center;           /* helps vertical alignment when wrapping */
+        }
+
+        .cta-buttons a {
+            flex: 1 1 auto;                /* allows buttons to grow/shrink but prefer natural width */
+            min-width: 220px;              /* prevents buttons from becoming too narrow */
+            max-width: 280px;              /* caps max width so they don't stretch too much on wide screens */
+        }
+
+        /* Force earlier stacking on very narrow viewports like iPhone */
+        @media (max-width: 480px) {
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cta-buttons a {
+                min-width: 240px;          /* or remove min-width if you want full width */
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+        @media (max-width: 480px) {
+            .cta-buttons img {
+                height: 46px !important;
+            }
+        }
     </style>
 </head>
 <body>
