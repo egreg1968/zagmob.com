@@ -120,36 +120,29 @@
             font-size: 0.95rem;
         }
 
-        .cta-buttons {
-            display: flex;
-            gap: 16px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin: 40px 0;
-            align-items: center;
+        /* Standalone CTA buttons - completely separate */
+        .standalone-cta {
+            margin: 18px 0;                    /* vertical spacing between the two buttons */
+            text-align: center;
         }
 
-        .cta-buttons a {
-            flex: 0 1 auto;           /* don't grow too much */
-            min-width: 220px;         /* important for forcing wrap */
+        .standalone-cta a {
+            display: inline-block;
+            min-width: 240px;
             max-width: 280px;
-            padding: 10px 20px;       /* reduce padding slightly if needed */
+            padding: 8px 20px;
         }
 
-        @media (max-width: 480px) {
-            .cta-buttons {
-                flex-direction: column;
-                align-items: center;
+        /* On larger screens, reduce spacing and allow side-by-side if wanted */
+        @media (min-width: 520px) {
+            .standalone-cta {
+                margin: 12px 8px;              /* tighter spacing on desktop */
+                display: inline-block;
             }
 
-            .cta-buttons a {
-                min-width: 240px;
-                max-width: 300px;
-                width: 100%;          /* makes them full-width on very small screens */
-            }
-
-            .cta-buttons img {
-                height: 46px;         /* slightly smaller on mobile to help fit */
+            .standalone-cta a {
+                min-width: 220px;
+                max-width: 240px;
             }
         }
     </style>
@@ -164,21 +157,23 @@
             and stopped <strong>exactly one day</strong> short of where you are right now.
         </p>
 
-        <div class="cta-buttons">
-            <!-- Android -->
+        <!-- Android Button - Standalone -->
+        <div class="standalone-cta android-cta">
             <a href="https://play.google.com/store/apps/details?id=com.zagmob.outlived"
-               class="btn btn-primary" target="_blank" rel="noopener" style="min-width: 220px;">
+               class="btn btn-primary" target="_blank" rel="noopener">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/512px-Google_Play_Store_badge_EN.svg.png"
                      alt="Get it on Google Play"
-                     style="height: 48px; width: auto; max-width: 100%; display: block; margin: 0 auto;">
+                     style="height:48px; width:auto; max-width:100%; display:block; margin:0 auto;">
             </a>
+        </div>
 
-            <!-- iOS -->
+        <!-- iOS Button - Standalone -->
+        <div class="standalone-cta ios-cta">
             <a href="https://apps.apple.com/app/out-lived/id6760954055"
-               class="btn btn-primary" target="_blank" rel="noopener" style="min-width: 220px;">
+               class="btn btn-primary" target="_blank" rel="noopener">
                 <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
                      alt="Download on the App Store"
-                     style="height: 48px; width: auto; max-width: 100%; display: block; margin: 0 auto;">
+                     style="height:48px; width:auto; max-width:100%; display:block; margin:0 auto;">
             </a>
         </div>
         <div>
