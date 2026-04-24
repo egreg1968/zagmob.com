@@ -176,6 +176,19 @@
                      style="height:48px; width:auto; max-width:100%; display:block; margin:0 auto;">
             </a>
         </div>
+        <div id="desktop-qr-section" style="display: none; text-align: center; margin: 60px 0 40px; padding: 30px; background: #f8f9fa; border-radius: 16px; box-shadow: 0 8px 25px rgba(0,0,0,0.08);">
+            <h2 style="margin-bottom: 12px; color: #222;">📱 Scan to Download <strong>Out Lived!</strong></h2>
+
+            <img
+                    src="/images/outlived-qr.png"
+                    alt="Scan this QR code with your phone to download Out Lived!"
+                    style="max-width: 320px; width: 100%; height: auto; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border-radius: 16px; border: 12px solid white;">
+
+            <p style="margin-top: 20px; color: #555; font-size: 1.1rem; max-width: 420px; margin-left: auto; margin-right: auto;">
+                Point your phone camera at the code — to install on your phone.
+            </p>
+        </div>
+
         <div>
             <a href="https://zagmob.com/" style="text-decoration: none; color: inherit;">
                 <strong>Zagmob</strong>
@@ -344,7 +357,17 @@
     Built with curiosity (and a little coffee and spite) by Zak and Greg
 </footer>
 
+
 <script>
+    function showDesktopQR() {
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
+            window.innerWidth < 1025;
+        const qrSection = document.getElementById('desktop-qr-section');
+        if (qrSection) qrSection.style.display = isMobile ? 'none' : 'block';
+    }
+    window.addEventListener('load', showDesktopQR);
+    window.addEventListener('resize', showDesktopQR);
+
     // Smart mobile redirect to the correct store
     function redirectToStore() {
         const userAgent = navigator.userAgent || navigator.vendor || window.opera;
