@@ -4,7 +4,7 @@
 
 **zagmob.com runs on GitHub Pages** (see `CNAME` + DNS → `185.199.x.x`).
 
-These files are from a prior attempt at **Cloudflare Pages / Netlify** and are **ignored by GitHub Pages**:
+These files are from a prior attempt at **Netlify** (and would also apply on Cloudflare Pages) and are **ignored by GitHub Pages**:
 
 - `_redirects`
 - `_headers`
@@ -40,12 +40,15 @@ No need to move the site — keep GitHub as origin.
 
 ## App-side checklist (outlived repo)
 
+**Full Mac mini / Apple Portal / release steps:** see  
+`outlived/docs/DEEPLINKS_RELEASE_CHECKLIST.md` in the app repo.
+
 - [x] `DeepLinkService` + share URLs with `/p/{base64slug}`
 - [x] Android `intent-filter` with `android:autoVerify="true"` for `https://zagmob.com/p/`
 - [x] iOS `Runner.entitlements` with `applinks:zagmob.com`
 - [x] `CODE_SIGN_ENTITLEMENTS` set in Xcode project
 - [ ] **Apple Developer → App ID → Associated Domains** enabled for `com.zagmob.outlived`
-- [ ] Ship a new iOS/Android build after entitlements fix
+- [ ] Ship a new iOS/Android build after entitlements fix (official builds on Mac mini)
 
 ## Verify after deploy
 
