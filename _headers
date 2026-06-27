@@ -1,3 +1,6 @@
+# Cloudflare Pages / Netlify only — IGNORED on GitHub Pages.
+# See DEEPLINKS.md for optional Cloudflare DNS proxy header fix.
+
 /.well-known/apple-app-site-association
   Content-Type: application/json
   Cache-Control: public, max-age=0, must-revalidate

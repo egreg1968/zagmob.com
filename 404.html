@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zagmob</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+  <div id="deeplink-root"></div>
+  <script src="/js/deeplink-landing.js"></script>
+  <script>
+    // GitHub Pages serves this file for missing paths but keeps the original URL
+    // (e.g. /p/BASE64SLUG), which is what we need for deep link landings.
+    DeeplinkLanding.init404('deeplink-root');
+  </script>
+</body>
+</html>

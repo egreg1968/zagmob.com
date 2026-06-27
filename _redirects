@@ -1,1 +1,3 @@
-/p/*    /outlived.html    200!
+# Cloudflare Pages / Netlify only — IGNORED on GitHub Pages.
+# GitHub uses 404.html for /p/* paths. See DEEPLINKS.md.
+/p/*    /p.html    200!
