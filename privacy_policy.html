@@ -3,47 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outlived Privacy Policy</title>
+    <title>Out Lived! Privacy Policy</title>
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; max-width: 720px; margin: 2rem auto; padding: 0 1.25rem; color: #1a1a1a; }
+        h1 { font-size: 1.75rem; }
+        h2 { font-size: 1.15rem; margin-top: 2rem; }
+        ul { padding-left: 1.25rem; }
+        a { color: #0077b6; }
+        footer { text-align: center; margin-top: 3rem; padding: 1.25rem 0; font-size: 0.9em; color: #666; border-top: 1px solid #e0e0e0; }
+    </style>
 </head>
 <body>
-<h1>Privacy Policy</h1>
-<p><strong>Effective Date: December 27, 2025</strong></p>
+<h1>Out Lived! Privacy Policy</h1>
+<p><strong>Effective date: July 2, 2026</strong></p>
+<p><strong>App:</strong> Out Lived! (ZaGMob LLC) &bull; <strong>Bundle ID:</strong> com.zagmob.outlived</p>
 
-<p>Outlived ("we," "us," or "our") respects your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application (the "App").</p>
+<p>Out Lived! (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) respects your privacy. This policy explains what information the app handles, what leaves your device, and what choices you have.</p>
 
-<h2>1. Information We Collect</h2>
-<p>We do <strong>not</strong> collect any personal information from you. The birthdate you enter is stored only on your device and is never transmitted to us or any third party.</p>
-
-<h2>2. Advertising and Third-Party Data Collection</h2>
-<p>The App displays advertisements served by Google AdMob. AdMob (operated by Google) may collect certain data automatically for the purpose of serving personalized ads, analytics, and fraud prevention. This may include:</p>
+<h2>1. Information stored on your device</h2>
+<p>The following stay on your phone or tablet unless you uninstall the app:</p>
 <ul>
-    <li>Device advertising ID</li>
-    <li>Approximate location (inferred from IP address)</li>
-    <li>Device information and app usage data</li>
+    <li>Display name and birthdate (for age calculations)</li>
+    <li>Goal age, streak, favorites, and app preferences</li>
+    <li>Premium entitlement flags and gift redemption state</li>
+    <li>The bundled historical-figures database (Pantheon dataset)</li>
 </ul>
-<p>We do not control AdMob's data practices. For details on how Google uses this information, please review Google's Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</p>
-<p>You can opt out of personalized advertising in your device settings:</p>
+<p>We do <strong>not</strong> upload your birthdate to our servers.</p>
+
+<h2>2. Location</h2>
+<p>If you tap <strong>Near Me</strong> on the map and grant permission, the app reads your precise location to center the map and show nearby figures. That location is used on-device for that session and is <strong>not</strong> sent to ZaGMob servers.</p>
+
+<h2>3. Gift codes and anonymous accounts</h2>
+<p>Lifetime premium users can create gift codes. That flow creates an <strong>anonymous Firebase account</strong> on your device so we can enforce monthly gift limits. We may store:</p>
 <ul>
-    <li>iOS: Settings > Privacy & Security > Apple Advertising > Limit Ad Tracking</li>
-    <li>Android: Settings > Google > Ads > Opt out of Ads Personalization</li>
+    <li>Anonymous user ID (Firebase Auth)</li>
+    <li>Optional display name (from your on-device name, if you gift)</li>
+    <li>Gift code metadata (creation time, redemption status)</li>
+</ul>
+<p>You can remove this cloud data anytime: <strong>Settings &rarr; Delete cloud account</strong>. That deletes your anonymous account and associated gift records on our servers. On-device app data is not removed.</p>
+
+<h2>4. Analytics and crash reporting</h2>
+<p>In <strong>release</strong> builds we use Google Firebase services:</p>
+<ul>
+    <li><strong>Firebase Analytics</strong> &mdash; pseudonymous usage events (e.g. tab views, shares, premium prompts). We do not send your name or birthdate in analytics parameters.</li>
+    <li><strong>Firebase Crashlytics</strong> &mdash; crash logs and diagnostics to fix stability issues.</li>
+</ul>
+<p>Debug and profile builds disable analytics and crash upload by default.</p>
+
+<h2>5. Advertising</h2>
+<p>Free users may see ads served by <strong>Google AdMob</strong>. Google may collect device identifiers, app interaction data, and approximate location (e.g. from IP) for ad delivery, fraud prevention, and measurement.</p>
+<p>Where required, we show Google&rsquo;s User Messaging Platform (UMP) consent form. You can manage ad personalization in device settings and, on supported devices, through ad privacy options in the app where available.</p>
+<ul>
+    <li>iOS: Settings &rarr; Privacy &amp; Security &rarr; Tracking (and Apple Advertising preferences)</li>
+    <li>Android: Settings &rarr; Google &rarr; Ads &rarr; Opt out of Ads Personalization</li>
+</ul>
+<p>Google&rsquo;s privacy policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+
+<h2>6. Purchases</h2>
+<p>Lifetime premium is sold through the Apple App Store or Google Play. Payment and purchase history are handled by Apple or Google under their respective privacy policies. We receive only what is needed to unlock premium features on your device.</p>
+
+<h2>7. Other third-party services</h2>
+<ul>
+    <li><strong>Firebase Remote Config</strong> &mdash; feature flags (no personal data).</li>
+    <li><strong>Wikimedia Commons</strong> &mdash; portrait images are fetched directly from Wikimedia when you view or share figures; those requests go to Wikimedia, not ZaGMob.</li>
+    <li><strong>Amazon affiliate links</strong> (optional) &mdash; if enabled, links may include our affiliate tag; Amazon&rsquo;s policies apply when you visit their site.</li>
 </ul>
 
-<h2>3. Data Storage and Security</h2>
-<p>All data entered in the App (such as your birthdate) is stored locally on your device using secure, standard mobile storage practices. We have no access to it.</p>
+<h2>8. Data retention and security</h2>
+<p>On-device data remains until you delete the app or clear app storage. Cloud gift data is deleted when you use <strong>Delete cloud account</strong>. Analytics and crash data are retained per Google Firebase default retention policies.</p>
+<p>Data transmitted to our backends and Google services uses HTTPS/TLS.</p>
 
-<h2>4. Children's Privacy</h2>
-<p>The App is not intended for children under 13. We do not knowingly collect personal information from children under 13.</p>
+<h2>9. Children&rsquo;s privacy</h2>
+<p>Out Lived! is not directed at children under 13. We do not knowingly collect personal information from children under 13.</p>
 
-<h2>5. Changes to This Privacy Policy</h2>
-<p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy here and updating the "Effective Date" above.</p>
+<h2>10. Changes</h2>
+<p>We may update this policy. Material changes will be posted here with an updated effective date.</p>
 
-<h2>6. Contact Us</h2>
-<p>If you have questions about this Privacy Policy, contact us at: [your email, e.g., privacy@zagmob.com]</p>
+<h2>11. Contact</h2>
+<p>Questions: <a href="mailto:hello@zagmob.com">hello@zagmob.com</a></p>
+<p>ZaGMob LLC &bull; Nixa, MO</p>
 
-<p>Thank you for using Outlived!</p>
-</body>
-<footer style="text-align: center; margin-top: 40px; padding: 20px; font-size: 0.9em; color: #666;">
-    <a href="https://zagmob.com/">Zagmob – Thoughtful Daily Apps</a>
-    • Built with curiosity ( also coffee and spite ) by Zak and Greg
+<footer>
+    <a href="https://zagmob.com/">zagmob.com</a> &bull; Thoughtful daily apps by Zak and Greg
 </footer>
+</body>
 </html>
