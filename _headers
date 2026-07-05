@@ -10,3 +10,13 @@
   Content-Type: application/json
   Cache-Control: public, max-age=0, must-revalidate
   X-Content-Type-Options: nosniff
+
+/data/death-patches/manifest.json
+  Content-Type: application/json
+  Cache-Control: public, max-age=300, must-revalidate
+  X-Content-Type-Options: nosniff
+
+/data/death-patches/*
+  Content-Type: application/json
+  Cache-Control: public, max-age=86400, immutable
+  X-Content-Type-Options: nosniff

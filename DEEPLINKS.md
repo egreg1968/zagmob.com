@@ -38,6 +38,28 @@ https://zagmob.com/p/TXVoYW1tYWQ
 
 No need to move the site — keep GitHub as origin.
 
+## Death-date patches (Out Lived!)
+
+Served at `https://zagmob.com/data/death-patches/` for **RELAUNCH-18** remote DB updates.
+
+| File | URL |
+|------|-----|
+| Manifest | `https://zagmob.com/data/death-patches/manifest.json` |
+| Patches | `https://zagmob.com/data/death-patches/0001.json` (zero-padded seq) |
+
+**Publish workflow** (from `outlived` repo):
+
+```bash
+python db/deathdate_crawer.py
+python db/export_death_patches.py
+cp db/death_patches/* ../zagmob.com/data/death-patches/
+# commit + push zagmob.com
+```
+
+Patch files are immutable once published; only append to `manifest.json`.
+
+---
+
 ## App-side checklist (outlived repo)
 
 **Full Mac mini / Apple Portal / release steps:** see  
