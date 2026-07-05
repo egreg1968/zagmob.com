@@ -10,6 +10,10 @@
           {
             "/": "/p/*",
             "comment": "Out Lived! person deep links"
+          },
+          {
+            "/": "/g/*",
+            "comment": "Out Lived! gift redeem links"
           }
         ]
       }

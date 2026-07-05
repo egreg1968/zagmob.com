@@ -16,6 +16,18 @@
     return match ? match[1] : null;
   }
 
+  function parseGiftPath(pathname) {
+    var match = pathname.match(/^\/g\/([^/]+)\/?$/);
+    return match ? decodeURIComponent(match[1]) : null;
+  }
+
+  function formatGiftCode(code) {
+    return String(code || '')
+      .trim()
+      .toUpperCase()
+      .replace(/\s+/g, '');
+  }
+
   function base64UrlDecode(encoded) {
     var str = encoded.replace(/-/g, '+').replace(/_/g, '/');
     while (str.length % 4) {
@@ -89,6 +101,51 @@
       '.deeplink-404 { text-align: center; padding: 80px 20px; }' +
       '.deeplink-404 h1 { font-size: 2rem; color: #0f172a; }';
     document.head.appendChild(style);
+  }
+
+  function renderGiftLanding(root, rawCode) {
+    injectStyles();
+    document.body.className = 'deeplink-body';
+    document.title = 'Claim your free week — Out Lived!';
+
+    var giftCode = formatGiftCode(rawCode);
+    var deepLinkUrl = window.location.origin + '/g/' + encodeURIComponent(giftCode);
+    setSmartAppBanner(deepLinkUrl);
+
+    root.innerHTML =
+      '<div class="deeplink-wrap">' +
+      '  <div class="deeplink-card">' +
+      '    <img class="deeplink-logo" src="/images/app_icon.png" alt="Out Lived! app icon">' +
+      '    <p class="deeplink-eyebrow">Gift from a friend</p>' +
+      '    <h1 class="deeplink-title">You\'ve been gifted a free week</h1>' +
+      '    <p class="deeplink-copy">Someone shared premium access to <strong>Out Lived!</strong> — daily matches with real people from history who lived exactly one day less than you.</p>' +
+      (giftCode
+        ? '    <div class="deeplink-figure">Gift code: ' + escapeHtml(giftCode) + '</div>'
+        : '') +
+      '    <div class="deeplink-actions">' +
+      (isMobile()
+        ? '      <a class="deeplink-btn deeplink-btn-primary" href="' +
+          escapeAttr(deepLinkUrl) +
+          '">Claim in Out Lived!</a>'
+        : '') +
+      '      <div class="deeplink-store-row">' +
+      '        <a href="' +
+      escapeAttr(ANDROID_STORE) +
+      '" target="_blank" rel="noopener">' +
+      '          <img src="/images/AndroidDownload.png" alt="Get it on Google Play">' +
+      '        </a>' +
+      '        <a href="' +
+      escapeAttr(IOS_STORE) +
+      '" target="_blank" rel="noopener">' +
+      '          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">' +
+      '        </a>' +
+      '      </div>' +
+      '      <p class="deeplink-copy" style="margin-top: 8px; font-size: 0.95rem;">After installing, <strong>tap this link again</strong> to claim your free week. Or open the app and go to Settings → Have a gift code?</p>' +
+      '      <a class="deeplink-btn deeplink-btn-secondary" href="/outlived.html">Learn about Out Lived!</a>' +
+      '    </div>' +
+      '  </div>' +
+      '  <p class="deeplink-foot">© 2026 <a href="/">ZaGMob</a> · <a href="/privacy_policy.html">Privacy</a></p>' +
+      '</div>';
   }
 
   function renderDeepLinkLanding(root, encodedSlug) {
@@ -174,6 +231,12 @@
       var root = document.getElementById(rootId || 'deeplink-root');
       if (!root) {
         return false;
+      }
+
+      var giftCode = parseGiftPath(window.location.pathname);
+      if (giftCode) {
+        renderGiftLanding(root, giftCode);
+        return true;
       }
 
       var encodedSlug = parseDeepLinkPath(window.location.pathname);
