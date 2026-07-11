@@ -38,6 +38,57 @@ https://zagmob.com/p/TXVoYW1tYWQ
 
 No need to move the site — keep GitHub as origin.
 
+## Cloudflare (free) — after nameservers are Active
+
+Keep GitHub Pages as origin. Cloudflare only proxies + rewrites.
+
+### DNS checklist
+
+- Apex `A` records → GitHub Pages `185.199.108–111.153` — **Proxied**
+- `www` CNAME → GitHub Pages — **Proxied**
+- `mail` / `autoconfig` / `autodiscover` CNAMEs → Private Email — **DNS only** (grey cloud)
+- `MX` / SPF / DKIM `TXT` — **DNS only**
+- SSL/TLS mode: **Full**
+
+### Rule 1 — `/p/*` and `/g/*` return HTTP 200 (fixes Facebook “failed to load”)
+
+GitHub Pages serves those paths as **404**. Facebook’s in-app browser treats that poorly.
+
+**Rules → Overview → Create rule → URL Rewrite** (or Bulk Redirects / Dynamic Redirect depending on UI):
+
+Option A — **Redirect Rules** (302 is OK for browsers; prefer rewrite if available):
+
+Better: **Rules → Transform Rules → Rewrite URL** (or **Cloudflare Workers** free tier if rewrite UI is limited):
+
+- If: `http.request.uri.path matches "^/p/"`  
+  Then rewrite path to `/p.html` (keep query string)  
+- If: `http.request.uri.path matches "^/g/"`  
+  Then rewrite path to `/p.html` (same landing JS handles `/g/`)
+
+After deploy, verify:
+
+```bash
+curl -sI https://zagmob.com/p/TXVoYW1tYWQ | head -5
+# Expect: HTTP/2 200  (not 404)
+```
+
+### Rule 2 — AASA Content-Type
+
+**Rules → Transform Rules → Modify Response Header**:
+
+- If path is `/.well-known/apple-app-site-association` OR `/apple-app-site-association`
+- Set static `Content-Type` = `application/json`
+
+### Facebook / social in-app browsers
+
+Universal Links are suppressed inside Facebook/Instagram. Landing page JS:
+
+- **Android:** primary CTA uses `intent://…#Intent;scheme=https;package=com.zagmob.outlived;…`
+- **iOS in FB:** copy-link + “Open in Safari” hint (cannot force UL from WebView)
+
+After OG tags are live, refresh previews:  
+https://developers.facebook.com/tools/debug/
+
 ## Death-date patches (Out Lived!)
 
 Served at `https://zagmob.com/data/death-patches/` for **RELAUNCH-18** remote DB updates.
