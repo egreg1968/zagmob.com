@@ -1,4 +1,10 @@
 {
   "schema": 1,
-  "patches": []
+  "patches": [
+    {
+      "seq": 1,
+      "file": "0001.json",
+      "published": "2026-07-12"
+    }
+  ]
 }

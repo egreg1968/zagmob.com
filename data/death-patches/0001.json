@@ -1,0 +1,626 @@
+{
+  "seq": 1,
+  "published": "2026-07-12T19:48:44Z",
+  "updates": [
+    {
+      "slug": "Abdrabbuh_Mansur_Hadi",
+      "death_date": "2026-05-28"
+    },
+    {
+      "slug": "Abdul_Ahad_Mohmand",
+      "death_date": "2026-06-21"
+    },
+    {
+      "slug": "Abdullah_Ibrahim",
+      "death_date": "2026-06-15"
+    },
+    {
+      "slug": "Ad\u00e1n_Godoy",
+      "death_date": "2026-04-05"
+    },
+    {
+      "slug": "Afrika_Bambaataa",
+      "death_date": "2026-04-09"
+    },
+    {
+      "slug": "Akihiro_Miwa",
+      "death_date": "2026-06-20"
+    },
+    {
+      "slug": "Alan_Greenspan",
+      "death_date": "2026-06-22"
+    },
+    {
+      "slug": "Alan_Hale_(astronomer)",
+      "death_date": "2026-06-06"
+    },
+    {
+      "slug": "Aleksandr_Panayotov_Aleksandrov",
+      "death_date": "2026-07-10"
+    },
+    {
+      "slug": "Aleksandr_Samokutyayev",
+      "death_date": "2026-06-17"
+    },
+    {
+      "slug": "Alex_Manninger",
+      "death_date": "2026-04-16"
+    },
+    {
+      "slug": "Alex_Zanardi",
+      "death_date": "2026-05-01"
+    },
+    {
+      "slug": "Anja_Breien",
+      "death_date": "2026-05-10"
+    },
+    {
+      "slug": "Ann_Blyth",
+      "death_date": "2026-06-24"
+    },
+    {
+      "slug": "Ann_Robinson",
+      "death_date": "2025-09-26"
+    },
+    {
+      "slug": "Ann_Widdecombe",
+      "death_date": "2026-07-00"
+    },
+    {
+      "slug": "Anne_Schedeen",
+      "death_date": "2026-06-14"
+    },
+    {
+      "slug": "Anthony_Head",
+      "death_date": "2026-06-01"
+    },
+    {
+      "slug": "Antonio_Ratt\u00edn",
+      "death_date": "2026-07-11"
+    },
+    {
+      "slug": "Artur_Dmitriev",
+      "death_date": "2026-06-28"
+    },
+    {
+      "slug": "Asha_Bhosle",
+      "death_date": "2026-04-12"
+    },
+    {
+      "slug": "Bajrakitiyabha",
+      "death_date": "2026-06-11"
+    },
+    {
+      "slug": "Barney_Frank",
+      "death_date": "2026-05-19"
+    },
+    {
+      "slug": "Bernadette_Chirac",
+      "death_date": "2026-06-05"
+    },
+    {
+      "slug": "Bj\u00f8rn_Tidmand",
+      "death_date": "2026-05-26"
+    },
+    {
+      "slug": "Bobby_Prince",
+      "death_date": "2026-06-16"
+    },
+    {
+      "slug": "Bonnie_Tyler",
+      "death_date": "2026-07-08"
+    },
+    {
+      "slug": "Borislav_Mikhailov",
+      "death_date": "2026-03-31"
+    },
+    {
+      "slug": "Camillo_Ruini",
+      "death_date": "2026-06-16"
+    },
+    {
+      "slug": "Carlo_Ginzburg",
+      "death_date": "2026-06-17"
+    },
+    {
+      "slug": "Carlo_Petrini",
+      "death_date": "2026-05-21"
+    },
+    {
+      "slug": "Carlos_Garaikoetxea",
+      "death_date": "2026-05-04"
+    },
+    {
+      "slug": "Carlos_Westendorp",
+      "death_date": "2026-03-30"
+    },
+    {
+      "slug": "Carmelo_Cedr\u00fan",
+      "death_date": "2026-07-06"
+    },
+    {
+      "slug": "Chan_Santokhi",
+      "death_date": "2026-03-30"
+    },
+    {
+      "slug": "Christian_Schwarz-Schilling",
+      "death_date": "2026-04-06"
+    },
+    {
+      "slug": "Claudine_Longet",
+      "death_date": "2026-05-14"
+    },
+    {
+      "slug": "Cleve_Moler",
+      "death_date": "2026-05-20"
+    },
+    {
+      "slug": "Clive_Davis",
+      "death_date": "2026-06-22"
+    },
+    {
+      "slug": "Craig_Venter",
+      "death_date": "2026-04-29"
+    },
+    {
+      "slug": "Daniel_Castellani",
+      "death_date": "2026-06-25"
+    },
+    {
+      "slug": "Dave_Mason",
+      "death_date": "2026-04-19"
+    },
+    {
+      "slug": "Daveigh_Chase",
+      "death_date": "2026-06-16"
+    },
+    {
+      "slug": "David_Allan_Coe",
+      "death_date": "2026-04-29"
+    },
+    {
+      "slug": "David_Hockney",
+      "death_date": "2026-06-11"
+    },
+    {
+      "slug": "David_Kabua",
+      "death_date": "2026-04-08"
+    },
+    {
+      "slug": "David_Malouf",
+      "death_date": "2026-04-22"
+    },
+    {
+      "slug": "Dee_Palmer",
+      "death_date": "2026-06-00"
+    },
+    {
+      "slug": "Denisa_Bar\u00e1nkov\u00e1",
+      "death_date": "2026-06-22"
+    },
+    {
+      "slug": "Desmond_Morris",
+      "death_date": "2026-04-19"
+    },
+    {
+      "slug": "Dick_Parry",
+      "death_date": "2026-05-22"
+    },
+    {
+      "slug": "Dino_Bruni",
+      "death_date": "2026-07-09"
+    },
+    {
+      "slug": "Dirk_Kempthorne",
+      "death_date": "2026-04-24"
+    },
+    {
+      "slug": "Donald_Gibb",
+      "death_date": "2026-05-12"
+    },
+    {
+      "slug": "Edgar_Morin",
+      "death_date": "2026-05-29"
+    },
+    {
+      "slug": "Edmund_Phelps",
+      "death_date": "2026-05-15"
+    },
+    {
+      "slug": "Eduard_Koksharov",
+      "death_date": "2026-03-31"
+    },
+    {
+      "slug": "Eduardo_Reyes_Ortiz",
+      "death_date": "1955-10-22"
+    },
+    {
+      "slug": "Eeva_Kilpi",
+      "death_date": "2026-06-27"
+    },
+    {
+      "slug": "Eliot_Engel",
+      "death_date": "2026-04-10"
+    },
+    {
+      "slug": "Ervin_L\u00e1szl\u00f3",
+      "death_date": "2026-06-29"
+    },
+    {
+      "slug": "Festus_Mogae",
+      "death_date": "2026-05-08"
+    },
+    {
+      "slug": "Francisco_Guterres",
+      "death_date": "2026-06-21"
+    },
+    {
+      "slug": "Franco_De_Piccoli",
+      "death_date": "2026-05-22"
+    },
+    {
+      "slug": "Fran\u00e7ois_Englert",
+      "death_date": "2026-06-18"
+    },
+    {
+      "slug": "F\u00e9licien_Kabuga",
+      "death_date": "2026-05-16"
+    },
+    {
+      "slug": "Georg_Baselitz",
+      "death_date": "2026-04-30"
+    },
+    {
+      "slug": "George_Ariyoshi",
+      "death_date": "2026-04-19"
+    },
+    {
+      "slug": "Giorgia_Moll",
+      "death_date": "2026-06-02"
+    },
+    {
+      "slug": "Guy_Edwards",
+      "death_date": "2026-06-19"
+    },
+    {
+      "slug": "Hamad_bin_Khalifa_Al_Thani",
+      "death_date": "2026-07-12"
+    },
+    {
+      "slug": "Haruhiro_Yamashita",
+      "death_date": "2026-06-19"
+    },
+    {
+      "slug": "Herman_Chernoff",
+      "death_date": "2026-07-06"
+    },
+    {
+      "slug": "Hiroki_Kosai",
+      "death_date": "2026-03-26"
+    },
+    {
+      "slug": "H\u00e9rcules_Brito_Ruas",
+      "death_date": "2026-06-11"
+    },
+    {
+      "slug": "Igor_Protti",
+      "death_date": "2026-06-19"
+    },
+    {
+      "slug": "Imrich_Bug\u00e1r",
+      "death_date": "2026-04-08"
+    },
+    {
+      "slug": "Jake_Tsakalidis",
+      "death_date": "2025-00-00"
+    },
+    {
+      "slug": "James_Burrows",
+      "death_date": "2026-06-19"
+    },
+    {
+      "slug": "Jason_Collins",
+      "death_date": "2026-05-12"
+    },
+    {
+      "slug": "Jean_Ziegler",
+      "death_date": "2026-06-10"
+    },
+    {
+      "slug": "Jimmie_Nicol",
+      "death_date": "1988-01-01"
+    },
+    {
+      "slug": "Joanna_Pettet",
+      "death_date": "2026-07-07"
+    },
+    {
+      "slug": "John_Flanagan_(author)",
+      "death_date": "2026-02-07"
+    },
+    {
+      "slug": "John_M._Fabian",
+      "death_date": "2026-05-21"
+    },
+    {
+      "slug": "Jos\u00e9_Sanfilippo",
+      "death_date": "2026-06-04"
+    },
+    {
+      "slug": "Jos\u00e9_Santamar\u00eda",
+      "death_date": "2026-04-15"
+    },
+    {
+      "slug": "Juris_Upatnieks",
+      "death_date": "2026-05-17"
+    },
+    {
+      "slug": "J\u00f6rg_Drehmel",
+      "death_date": "2026-05-00"
+    },
+    {
+      "slug": "Kazuhiro_Ninomiya",
+      "death_date": "2026-05-04"
+    },
+    {
+      "slug": "Kazuo_Imanishi",
+      "death_date": "2026-04-16"
+    },
+    {
+      "slug": "Kei_Taniguchi",
+      "death_date": "2015-12-22"
+    },
+    {
+      "slug": "Kelly_Curtis",
+      "death_date": "2026-05-30"
+    },
+    {
+      "slug": "Ken_Bates",
+      "death_date": "2026-07-11"
+    },
+    {
+      "slug": "Kirsti_Sparboe",
+      "death_date": "2026-06-19"
+    },
+    {
+      "slug": "Koji_Suzuki",
+      "death_date": "2026-05-08"
+    },
+    {
+      "slug": "Koji_Tanaka",
+      "death_date": "2026-05-26"
+    },
+    {
+      "slug": "Kyle_Busch",
+      "death_date": "2026-05-21"
+    },
+    {
+      "slug": "Lady_Pamela_Hicks",
+      "death_date": "2026-06-05"
+    },
+    {
+      "slug": "Lauren_Bennett",
+      "death_date": "2026-05-29"
+    },
+    {
+      "slug": "Leivinha",
+      "death_date": "2026-06-04"
+    },
+    {
+      "slug": "Liamine_Z\u00e9roual",
+      "death_date": "2026-03-28"
+    },
+    {
+      "slug": "Lindsey_Graham",
+      "death_date": "2026-07-11"
+    },
+    {
+      "slug": "Ling_Liong_Sik",
+      "death_date": "2026-04-04"
+    },
+    {
+      "slug": "Louise_Lasser",
+      "death_date": "2026-07-06"
+    },
+    {
+      "slug": "Luis_Puenzo",
+      "death_date": "2026-04-21"
+    },
+    {
+      "slug": "Lyudmila_Shevtsova",
+      "death_date": "2026-04-13"
+    },
+    {
+      "slug": "L\u00e1szl\u00f3_Fazekas",
+      "death_date": "2026-05-06"
+    },
+    {
+      "slug": "Mal_Anderson",
+      "death_date": "2026-05-11"
+    },
+    {
+      "slug": "Mario_Adorf",
+      "death_date": "2026-04-08"
+    },
+    {
+      "slug": "Marios_Oikonomou",
+      "death_date": "2026-06-01"
+    },
+    {
+      "slug": "Marjane_Satrapi",
+      "death_date": "2026-06-04"
+    },
+    {
+      "slug": "Mary_Beth_Hurt",
+      "death_date": "2026-03-28"
+    },
+    {
+      "slug": "Michael_Eneramo",
+      "death_date": "2026-04-24"
+    },
+    {
+      "slug": "Michael_O._Rabin",
+      "death_date": "2026-04-14"
+    },
+    {
+      "slug": "Michael_Tilson_Thomas",
+      "death_date": "2026-04-22"
+    },
+    {
+      "slug": "Michel_Stievenard",
+      "death_date": "2026-05-29"
+    },
+    {
+      "slug": "Mircea_Lucescu",
+      "death_date": "2026-04-07"
+    },
+    {
+      "slug": "Moya_Brennan",
+      "death_date": "2026-04-13"
+    },
+    {
+      "slug": "Nadia_Far\u00e8s",
+      "death_date": "2026-04-17"
+    },
+    {
+      "slug": "Nathalie_Baye",
+      "death_date": "2026-04-17"
+    },
+    {
+      "slug": "Neville_Cenac",
+      "death_date": "2026-06-02"
+    },
+    {
+      "slug": "Ole_Nydahl",
+      "death_date": "2026-05-18"
+    },
+    {
+      "slug": "Oliver_Tree",
+      "death_date": "2026-06-14"
+    },
+    {
+      "slug": "Oscar_Schmidt",
+      "death_date": "2026-04-17"
+    },
+    {
+      "slug": "Paraskevas_Antzas",
+      "death_date": "2026-05-25"
+    },
+    {
+      "slug": "Peabo_Bryson",
+      "death_date": "2026-06-02"
+    },
+    {
+      "slug": "Peppino_di_Capri",
+      "death_date": "2026-07-11"
+    },
+    {
+      "slug": "Peter_Hollingworth",
+      "death_date": "2026-05-19"
+    },
+    {
+      "slug": "Rasim_Balayev",
+      "death_date": "2026-03-29"
+    },
+    {
+      "slug": "Ra\u00fal_Guerr\u00f3n",
+      "death_date": "2026-06-01"
+    },
+    {
+      "slug": "Rick_Adelman",
+      "death_date": "2026-06-01"
+    },
+    {
+      "slug": "Rudolf_Plyukfelder",
+      "death_date": "2026-04-24"
+    },
+    {
+      "slug": "Sergei_Ivanov",
+      "death_date": "2026-06-26"
+    },
+    {
+      "slug": "Shahrnush_Parsipur",
+      "death_date": "2026-07-03"
+    },
+    {
+      "slug": "Slavenka_Drakuli\u0107",
+      "death_date": "2026-06-20"
+    },
+    {
+      "slug": "Sonny_Rollins",
+      "death_date": "2026-05-25"
+    },
+    {
+      "slug": "Stacey_King",
+      "death_date": "2026-06-07"
+    },
+    {
+      "slug": "Ted_Turner",
+      "death_date": "2026-05-06"
+    },
+    {
+      "slug": "Teejan_Bai",
+      "death_date": "2026-07-05"
+    },
+    {
+      "slug": "Tom_Kane",
+      "death_date": "2026-05-18"
+    },
+    {
+      "slug": "Tore_Berger",
+      "death_date": "2026-05-18"
+    },
+    {
+      "slug": "Ursula_Donath",
+      "death_date": "2026-04-12"
+    },
+    {
+      "slug": "Valie_Export",
+      "death_date": "2026-05-14"
+    },
+    {
+      "slug": "Vicente_Lucas",
+      "death_date": "2026-04-14"
+    },
+    {
+      "slug": "Vijaya_Mehta",
+      "death_date": "2026-06-30"
+    },
+    {
+      "slug": "Vittorio_Messori",
+      "death_date": "2026-04-03"
+    },
+    {
+      "slug": "Vlado_Janevski",
+      "death_date": "2026-06-28"
+    },
+    {
+      "slug": "Wakana_Yamazaki",
+      "death_date": "2026-04-18"
+    },
+    {
+      "slug": "Wally_Funk",
+      "death_date": "2026-07-08"
+    },
+    {
+      "slug": "Willner_Rivas",
+      "death_date": "2026-06-24"
+    },
+    {
+      "slug": "Yaacov_Agam",
+      "death_date": "2026-06-21"
+    },
+    {
+      "slug": "Yves_Lacoste",
+      "death_date": "2026-06-20"
+    },
+    {
+      "slug": "Zacarias_Kamwenho",
+      "death_date": "2026-05-29"
+    },
+    {
+      "slug": "Zeudi_Araya",
+      "death_date": "2026-05-24"
+    }
+  ]
+}
