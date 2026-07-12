@@ -66,7 +66,24 @@
             margin-bottom: 16px;
             vertical-align: middle;
         }
-        .tagline { font-size: 1.35rem; color: #334155; max-width: 680px; margin: 0 auto 40px; }
+        .tagline { font-size: 1.35rem; color: #334155; max-width: 680px; margin: 0 auto 24px; }
+
+        /* Soft hero affordance — present, not dominant */
+        .hero-get-app {
+            margin: 0 0 28px;
+            font-size: 1rem;
+        }
+        .hero-get-app a {
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.15s, color 0.15s;
+        }
+        .hero-get-app a:hover {
+            color: #1d4ed8;
+            border-bottom-color: #1d4ed8;
+        }
 
         .cta-buttons {
             display: flex;
@@ -148,37 +165,67 @@
         }
         .whats-new-list li strong { color: #0f172a; }
 
+        /* Full download block — after product story */
+        .download-section { text-align: center; }
+        .download-section > p {
+            max-width: 520px;
+            margin: 0 auto 28px;
+            color: #475569;
+        }
+        .store-badges {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 12px 20px;
+            margin-bottom: 8px;
+        }
+        .store-badges a {
+            display: inline-block;
+            line-height: 0;
+            transition: transform 0.15s;
+        }
+        .store-badges a:hover { transform: translateY(-2px); }
+        .store-badges img {
+            height: 48px;
+            width: auto;
+            max-width: 100%;
+            display: block;
+        }
+        #desktop-qr-section {
+            display: none;
+            margin: 36px auto 0;
+            max-width: 420px;
+            padding: 28px 24px;
+            background: #f8fafc;
+            border-radius: 16px;
+            border: 1px solid #e2e8f0;
+        }
+        #desktop-qr-section h3 {
+            margin: 0 0 8px;
+            font-size: 1.15rem;
+            color: #0f172a;
+            font-weight: 600;
+        }
+        #desktop-qr-section p {
+            margin: 16px 0 0;
+            color: #64748b;
+            font-size: 0.95rem;
+        }
+        #desktop-qr-section img {
+            max-width: 220px;
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 8px solid white;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        }
+
         footer {
             text-align: center;
             padding: 40px 20px;
             color: #64748b;
             font-size: 0.95rem;
-        }
-
-        /* Standalone CTA buttons - completely separate */
-        .standalone-cta {
-            margin: 18px 0;                    /* vertical spacing between the two buttons */
-            text-align: center;
-        }
-
-        .standalone-cta a {
-            display: inline-block;
-            min-width: 240px;
-            max-width: 280px;
-            padding: 8px 20px;
-        }
-
-        /* On larger screens, reduce spacing and allow side-by-side if wanted */
-        @media (min-width: 520px) {
-            .standalone-cta {
-                margin: 12px 8px;              /* tighter spacing on desktop */
-                display: inline-block;
-            }
-
-            .standalone-cta a {
-                min-width: 220px;
-                max-width: 240px;
-            }
         }
     </style>
 </head>
@@ -192,38 +239,9 @@
             Every day the app shows you real historical figures who lived rich lives —
             and stopped <strong>exactly one day</strong> short of where you are right now.
         </p>
-
-        <!-- Android Button - Standalone -->
-        <div class="standalone-cta android-cta">
-            <a href="https://play.google.com/store/apps/details?id=com.zagmob.outlived"
-               class="btn btn-primary" target="_blank" rel="noopener">
-                <img src="images/AndroidDownload.png"
-                     alt="Get it on Google Play"
-                     style="height:48px; width:auto; max-width:100%; display:block; margin:0 auto;">
-            </a>
-        </div>
-
-        <!-- iOS Button - Standalone -->
-        <div class="standalone-cta ios-cta">
-            <a href="https://apps.apple.com/app/out-lived/id6760954055"
-               class="btn btn-primary" target="_blank" rel="noopener">
-                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                     alt="Download on the App Store"
-                     style="height:48px; width:auto; max-width:100%; display:block; margin:0 auto;">
-            </a>
-        </div>
-        <div id="desktop-qr-section" style="display: none; text-align: center; margin: 60px 0 40px; padding: 30px; background: #f8f9fa; border-radius: 16px; box-shadow: 0 8px 25px rgba(0,0,0,0.08);">
-            <h2 style="margin-bottom: 12px; color: #222;">📱 Scan to Download <strong>Out Lived!</strong></h2>
-
-            <img
-                    src="/images/outlived-qr.png"
-                    alt="Scan this QR code with your phone to download Out Lived!"
-                    style="max-width: 320px; width: 100%; height: auto; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border-radius: 16px; border: 12px solid white;">
-
-            <p style="margin-top: 20px; color: #555; font-size: 1.1rem; max-width: 420px; margin-left: auto; margin-right: auto;">
-                Point your phone camera at the code — to install on your phone.
-            </p>
-        </div>
+        <p class="hero-get-app">
+            <a href="#download">Get the app ↓</a>
+        </p>
 
         <div>
             <a href="https://zagmob.com/" style="text-decoration: none; color: inherit;">
@@ -338,6 +356,28 @@
                     referrerpolicy="strict-origin-when-cross-origin"
                     allowfullscreen>
             </iframe>
+        </div>
+    </div>
+
+    <div class="section download-section" id="download">
+        <h2>Get Out Lived!</h2>
+        <p>Free on iPhone and Android. Private by default — enter your birthdate once and see who you’ve outlived today.</p>
+        <div class="store-badges">
+            <a href="https://play.google.com/store/apps/details?id=com.zagmob.outlived"
+               target="_blank" rel="noopener">
+                <img src="images/AndroidDownload.png" alt="Get it on Google Play">
+            </a>
+            <a href="https://apps.apple.com/app/out-lived/id6760954055"
+               target="_blank" rel="noopener">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                     alt="Download on the App Store">
+            </a>
+        </div>
+        <div id="desktop-qr-section">
+            <h3>Or scan with your phone</h3>
+            <img src="/images/outlived-qr.png"
+                 alt="Scan this QR code with your phone to download Out Lived!">
+            <p>Point your camera at the code to open the store on your phone.</p>
         </div>
     </div>
 
