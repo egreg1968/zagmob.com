@@ -1,0 +1,38 @@
+{
+  "seq": 4,
+  "published": "2026-07-26T13:31:56Z",
+  "updates": [
+    {
+      "slug": "Celina_Jesionowska",
+      "death_date": "2026-07-22"
+    },
+    {
+      "slug": "Chuck_Russell",
+      "death_date": "2026-07-22"
+    },
+    {
+      "slug": "Erwin_Vandendaele",
+      "death_date": "2026-07-21"
+    },
+    {
+      "slug": "Kevin_Keegan",
+      "death_date": "2026-07-20"
+    },
+    {
+      "slug": "K\u014dz\u014d_Okamoto",
+      "death_date": "2026-07-23"
+    },
+    {
+      "slug": "Olaf_Tufte",
+      "death_date": "2026-07-21"
+    },
+    {
+      "slug": "R._James_Woolsey_Jr.",
+      "death_date": "2026-07-21"
+    },
+    {
+      "slug": "Wolfgang_Behrendt",
+      "death_date": "2026-06-22"
+    }
+  ]
+}
