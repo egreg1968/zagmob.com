@@ -1,0 +1,46 @@
+{
+  "seq": 5,
+  "published": "2026-08-02T13:31:59Z",
+  "updates": [
+    {
+      "slug": "Franco_Baresi",
+      "death_date": "2026-07-31"
+    },
+    {
+      "slug": "Glen_Hansard",
+      "death_date": "2026-07-29"
+    },
+    {
+      "slug": "Gunther_von_Hagens",
+      "death_date": "2026-07-24"
+    },
+    {
+      "slug": "Ivan_Edeshko",
+      "death_date": "2026-07-30"
+    },
+    {
+      "slug": "Kavinsky",
+      "death_date": "2026-07-28"
+    },
+    {
+      "slug": "Kazimira_Prunskien\u0117",
+      "death_date": "2026-07-30"
+    },
+    {
+      "slug": "Keigo_Higashino",
+      "death_date": "2026-07-23"
+    },
+    {
+      "slug": "Nirmal_Purja",
+      "death_date": "2026-07-30"
+    },
+    {
+      "slug": "Takeaki_Matsumoto",
+      "death_date": "2026-07-27"
+    },
+    {
+      "slug": "Vincent_Pastore",
+      "death_date": "2026-08-01"
+    }
+  ]
+}
