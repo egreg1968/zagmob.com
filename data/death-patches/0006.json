@@ -1,0 +1,30 @@
+{
+  "seq": 6,
+  "published": "2026-08-09T13:31:37Z",
+  "updates": [
+    {
+      "slug": "Francesco_Guccini",
+      "death_date": "2026-08-06"
+    },
+    {
+      "slug": "Joan_Blackman",
+      "death_date": "2026-03-16"
+    },
+    {
+      "slug": "J\u00falio_Duarte_Langa",
+      "death_date": "2026-08-03"
+    },
+    {
+      "slug": "Klaus_H\u00e4nsch",
+      "death_date": "2026-08-04"
+    },
+    {
+      "slug": "William_Orbit",
+      "death_date": "2026-07-23"
+    },
+    {
+      "slug": "Zolt\u00e1n_Melis",
+      "death_date": "2026-08-05"
+    }
+  ]
+}
