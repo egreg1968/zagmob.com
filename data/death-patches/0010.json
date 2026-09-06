@@ -1,0 +1,62 @@
+{
+  "seq": 10,
+  "published": "2026-09-06T13:36:10Z",
+  "updates": [
+    {
+      "slug": "Ada_Yonath",
+      "death_date": "2026-08-31"
+    },
+    {
+      "slug": "Cassandra_Wilson",
+      "death_date": "2026-09-01"
+    },
+    {
+      "slug": "Eberhard_Vogel",
+      "death_date": "2026-09-01"
+    },
+    {
+      "slug": "Gloria_Steinem",
+      "death_date": "2026-09-02"
+    },
+    {
+      "slug": "Hideki_Shirakawa",
+      "death_date": "2026-08-24"
+    },
+    {
+      "slug": "Ivan_Gudelj",
+      "death_date": "2026-09-02"
+    },
+    {
+      "slug": "Jean-Paul_Rappeneau",
+      "death_date": "2026-09-01"
+    },
+    {
+      "slug": "Milan_Ohnisko",
+      "death_date": "2026-09-03"
+    },
+    {
+      "slug": "Raif_Dizdarevi\u0107",
+      "death_date": "2026-09-02"
+    },
+    {
+      "slug": "Richard_E._Stearns",
+      "death_date": "2026-08-29"
+    },
+    {
+      "slug": "Robin_Morgan",
+      "death_date": "2026-09-05"
+    },
+    {
+      "slug": "Tony_Gatlif",
+      "death_date": "2026-09-02"
+    },
+    {
+      "slug": "Toyohiro_Akiyama",
+      "death_date": "2026-08-26"
+    },
+    {
+      "slug": "\u00c9douard_Balladur",
+      "death_date": "2026-08-31"
+    }
+  ]
+}
