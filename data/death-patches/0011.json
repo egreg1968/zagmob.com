@@ -1,0 +1,26 @@
+{
+  "seq": 11,
+  "published": "2026-09-13T13:34:37Z",
+  "updates": [
+    {
+      "slug": "Emma_Bonino",
+      "death_date": "2026-09-11"
+    },
+    {
+      "slug": "George_Chuvalo",
+      "death_date": "2026-09-12"
+    },
+    {
+      "slug": "Pierfranco_Vianelli",
+      "death_date": "2026-09-08"
+    },
+    {
+      "slug": "Princess_Astrid,_Mrs._Ferner",
+      "death_date": "2026-09-11"
+    },
+    {
+      "slug": "Tung_Chee-hwa",
+      "death_date": "2026-09-08"
+    }
+  ]
+}
