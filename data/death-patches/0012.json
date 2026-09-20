@@ -1,0 +1,38 @@
+{
+  "seq": 12,
+  "published": "2026-09-20T13:35:00Z",
+  "updates": [
+    {
+      "slug": "Annie_Dillard",
+      "death_date": "2026-09-15"
+    },
+    {
+      "slug": "Flora_Brovina",
+      "death_date": "2026-09-15"
+    },
+    {
+      "slug": "Gerrit_Graham",
+      "death_date": "2026-09-15"
+    },
+    {
+      "slug": "Jon_Kyl",
+      "death_date": "2026-09-17"
+    },
+    {
+      "slug": "Lud\u011bk_Miklo\u0161ko",
+      "death_date": "2026-09-13"
+    },
+    {
+      "slug": "Patricio_Guzm\u00e1n",
+      "death_date": "2026-09-15"
+    },
+    {
+      "slug": "Sandro_Mazzola",
+      "death_date": "2026-09-19"
+    },
+    {
+      "slug": "Sergei_Tchepikov",
+      "death_date": "2026-09-17"
+    }
+  ]
+}
