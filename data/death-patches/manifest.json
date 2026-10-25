@@ -70,6 +70,11 @@
       "seq": 14,
       "file": "0014.json",
       "published": "2026-10-18"
+    },
+    {
+      "seq": 15,
+      "file": "0015.json",
+      "published": "2026-10-25"
     }
   ]
 }

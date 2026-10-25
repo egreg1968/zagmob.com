@@ -1,0 +1,26 @@
+{
+  "seq": 15,
+  "published": "2026-10-25T13:31:14Z",
+  "updates": [
+    {
+      "slug": "Claude_Cohen-Tannoudji",
+      "death_date": "2026-10-22"
+    },
+    {
+      "slug": "Paolo_Romeo",
+      "death_date": "2026-10-25"
+    },
+    {
+      "slug": "Richard_Riehle",
+      "death_date": "2026-10-15"
+    },
+    {
+      "slug": "Ry\u016b_Murakami",
+      "death_date": "2026-10-17"
+    },
+    {
+      "slug": "Tom_Skerritt",
+      "death_date": "2026-10-21"
+    }
+  ]
+}
