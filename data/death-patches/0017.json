@@ -1,0 +1,30 @@
+{
+  "seq": 17,
+  "published": "2026-11-08T14:30:56Z",
+  "updates": [
+    {
+      "slug": "Herbert_Blomstedt",
+      "death_date": "2026-11-04"
+    },
+    {
+      "slug": "Janosch",
+      "death_date": "2026-11-03"
+    },
+    {
+      "slug": "Jay_Rockefeller",
+      "death_date": "2026-11-06"
+    },
+    {
+      "slug": "Juan_Atkins",
+      "death_date": "2026-10-31"
+    },
+    {
+      "slug": "Sebasti\u00e1n_Lelio",
+      "death_date": "2026-11-06"
+    },
+    {
+      "slug": "Tinto_Brass",
+      "death_date": "2026-11-04"
+    }
+  ]
+}
